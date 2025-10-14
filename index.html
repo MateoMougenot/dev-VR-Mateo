@@ -11,27 +11,27 @@
 
 <body>
 
-  <a-scene>
+  <a-scene fog="color: #ff0000; density: 0.135; far: 20; type: exponential" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
     <a-assets>
-      <a-asset-item id="mice" src="assets/Mice.glb"></a-asset-item>
+      <a-asset-item id="arcade" src="assets/Arcade Machine.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="#mice" position="-1 5 -5" scale="1 1 1"></a-entity>
+    <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 1 -0.55" rotation="-1.08 -47.3 0"></a-entity>
 
-        <a-assets>
-      <a-asset-item id="forest" src="assets/Forest.glb"></a-asset-item>
+    <a-assets>
+      <a-asset-item id="lamp" src="assets/Lamp post.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="#forest" position="-1 0 -5" scale="1 1 1"></a-entity>
+    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0" scale="0.2 0.2 0.2"></a-entity>
+
+
+
+    <a-entity light="color: #f78080; type: ambient" position="0 2.6 0"></a-entity>
+    <a-entity light="type: ambient; color: #fff"></a-entity>
     
 
-    <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
-
-    <!-- <a-box position="-1 0 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
-    <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
-    <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
     <a-sky color="#ECECEC"></a-sky>
-    <a-entity id="rig" position="0 0 0">
-      <a-camera position="0 1.6 0"></a-camera>
+    <a-entity id="rig" rotation="0.34377467707849396 -192.74592 -4">
+      <a-camera position="0.9 1.6 5.56" rotation="-0.9167324722093168 -2.4064227395494555 0"></a-camera>
     </a-entity>
   </a-scene>
 
