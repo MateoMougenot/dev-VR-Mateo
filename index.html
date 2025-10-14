@@ -11,30 +11,52 @@
 
 <body>
 
-<a-scene fog="color: #ff0000; density: 0.285; far: 20; type: exponential" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+  <a-scene fog="color: #ff0000; density: 0.285; far: 20; type: exponential" keyboard-shortcuts="" screenshot=""
+    xr-mode-ui="" device-orientation-permission-ui="">
+
+
+
+
+    <!-- Borne arcae =============================== -->
     <a-assets>
       <a-asset-item id="arcade" src="assets/Arcade Machine.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 0.82 -0.55" rotation="-1.08 -47.3 0" scale="0.9 0.9 0.9"></a-entity>
+    <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 0.82 -0.55" rotation="-1.08 -47.3 0"
+      scale="0.9 0.9 0.9"></a-entity>
 
+
+    <!-- Lampadaire ========================= -->
     <a-assets>
       <a-asset-item id="lamp" src="assets/Lamp post.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0" scale="0.2 0.2 0.2"></a-entity>
+    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0"
+      scale="0.2 0.2 0.2"></a-entity>
+
+    <a-entity position="0 0 -2">
+
+      <!-- Lumiere ==================================== -->
+      <a-entity light="color: #f78080; type: ambient" position="0 2.6 0"></a-entity>
+      <a-entity light="color: #fff; decay: 16.3; intensity: 31.1; type: point" position="-1.5 3.42 -0.57"></a-entity>
+      <a-entity light="color: #fff; intensity: 5; type: point" position="-0.31 1.74 -0.57"></a-entity>
+      <a-entity light="color: #0000ff; decay: 11.6; distance: 4.7; intensity: 57.7; type: point"
+        position="-0.1 1.17 -0.42"
+        animation="property: light.intensity; from: 1.5; to: 0; dir: alternate; dur: 150; loop: true;"></a-entity>
+      <a-entity light="color: #fff; intensity: 5; type: spot" position="-1.55 3.35 -0.57"
+        rotation="-16.920000000000005 -54.92 0"></a-entity>
 
 
+      <!-- Elements ==================================== -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
 
-    <a-entity light="color: #f78080; type: ambient" position="0 2.6 0"></a-entity>
-    <a-entity light="color: #fff; decay: 16.3; intensity: 31.1; type: point" position="-1.5 3.42 -0.57"></a-entity>
-    <a-entity light="color: #fff; intensity: 5; type: point" position="-0.31 1.74 -0.57"></a-entity>
-<a-entity light="color: #0000ff; decay: 11.6; distance: 4.7; intensity: 57.7; type: point" position="-0.1 1.17 -0.42"></a-entity>
-    <a-entity light="color: #fff; intensity: 5; type: spot" position="-1.55 3.35 -0.57" rotation="-16.920000000000005 -54.92 0"></a-entity>
 
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
-    <a-sky color="#ECECEC"></a-sky>
-    <a-entity id="rig" rotation="0.34377467707849396 -192.74592 -4">
-      <a-camera position="0.7881176178936234 1.6 2.0598895905631127" rotation="-9.740282517224 -0.572957795130762 0"></a-camera>
+      <a-entity id="rig" rotation="0.34377467707849396 -192.74592 -4">
+        <a-camera position="0.7881176178936234 1.6 2.0598895905631127"
+          rotation="-9.740282517224 -0.572957795130762 0"></a-camera>
+      </a-entity>
+
     </a-entity>
+
   </a-scene>
 
 </body>
