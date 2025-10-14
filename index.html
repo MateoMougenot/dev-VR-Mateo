@@ -11,7 +11,8 @@
 
 <body>
 
-  <a-scene fog="color: #ff0000; density: 0.135; far: 20; type: exponential" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+  <a-scene fog="color: #ff0000; density: 0.135; far: 20; type: exponential" keyboard-shortcuts="" screenshot=""
+    xr-mode-ui="" device-orientation-permission-ui="">
     <a-assets>
       <a-asset-item id="arcade" src="assets/Arcade Machine.glb"></a-asset-item>
     </a-assets>
@@ -20,13 +21,14 @@
     <a-assets>
       <a-asset-item id="lamp" src="assets/Lamp post.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0" scale="0.2 0.2 0.2"></a-entity>
+    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0"
+      scale="0.2 0.2 0.2"></a-entity>
 
 
 
     <a-entity light="color: #f78080; type: ambient" position="0 2.6 0"></a-entity>
-    <a-entity light="type: ambient; color: #fff"></a-entity>
-    
+    <a-entity light="color: #fff; decay: 16.3; intensity: 31.1; type: point" position="-1.5 3.42 -0.57"></a-entity>
+
 
     <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
     <a-sky color="#ECECEC"></a-sky>
