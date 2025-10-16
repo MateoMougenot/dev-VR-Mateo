@@ -21,16 +21,20 @@
     <a-assets>
       <a-asset-item id="arcade" src="assets/Arcade Machine.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 0.82 -0.55" rotation="-1.08 -47.3 0"
-      scale="0.9 0.9 0.9"></a-entity>
+
 
 
     <!-- Lampadaire ========================= -->
     <a-assets>
       <a-asset-item id="lamp" src="assets/Lamp post.glb"></a-asset-item>
     </a-assets>
-    <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0"
-      scale="0.2 0.2 0.2"></a-entity>
+
+
+    <!-- <a-assets>
+      <a-asset-item id="tree" src="assets/Big Tree.glb"></a-asset-item>
+    </a-assets>
+    <a-entity gltf-model="assets/Big Tree.glb" position="-1.24 1.7 -0.17" rotation="-1.08 -10 0"
+      scale="1.5 1.5 1.5"></a-entity> -->
 
     <a-entity position="0 0 -2">
 
@@ -48,6 +52,26 @@
       <!-- Elements ==================================== -->
       <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
+
+      <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0"
+        scale="0.2 0.2 0.2">
+      </a-entity>
+
+      <a-entity gltf-model="assets/Lamp post.glb" position="-3.6 -0.02 0.41" rotation="-1.08 -47.3 0"
+        scale="0.2 0.2 0.2">
+      </a-entity>
+      <a-entity light="color: #fff; intensity: 5; type: point" position="-3.6 1.74 0.41"></a-entity>
+
+      <a-entity gltf-model="assets/Lamp post.glb" position="-2.08 -0.02 1.83" rotation="-1.08 -47.3 0"
+        scale="0.2 0.2 0.2">
+      </a-entity>
+      <a-entity light="color: #fff; intensity: 5; type: point" position="-2.08 1.74 1.83"></a-entity>
+
+
+      <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 0.82 -0.55" rotation="-1.08 -47.3 0"
+        scale="0.9 0.9 0.9">
+      </a-entity>
+      <a-entity light="color: #fff; intensity: 5; type: point" position="0.04 1.74 -0.55"></a-entity>
 
 
       <a-entity id="rig" rotation="0.34377467707849396 -192.74592 -4">
