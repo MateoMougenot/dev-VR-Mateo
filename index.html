@@ -11,7 +11,7 @@
 
 <body>
 
-  <a-scene fog="color: #ff0000; density: 0.285; far: 20; type: exponential" keyboard-shortcuts="" screenshot=""
+  <a-scene fog="color: #ff0000; density: 0.585; far: 20; type: exponential" keyboard-shortcuts="" screenshot=""
     xr-mode-ui="" device-orientation-permission-ui="">
 
 
@@ -26,7 +26,7 @@
 
     <!-- Lampadaire ========================= -->
     <a-assets>
-      <a-asset-item id="lamp" src="assets/Lamp post.glb"></a-asset-item>
+      <a-asset-item id="lamp" src="assets/Streetlight.glb"></a-asset-item>
     </a-assets>
 
 
@@ -36,7 +36,7 @@
     <a-entity gltf-model="assets/Big Tree.glb" position="-1.24 1.7 -0.17" rotation="-1.08 -10 0"
       scale="1.5 1.5 1.5"></a-entity> -->
 
-    <a-entity position="0 0 -2">
+    <a-entity position="0 0 -4">
 
       <!-- Lumiere ==================================== -->
       <a-entity light="color: #f78080; type: ambient" position="0 2.6 0"></a-entity>
@@ -53,25 +53,44 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#000"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
 
-      <a-entity gltf-model="assets/Lamp post.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -47.3 0"
-        scale="0.2 0.2 0.2">
+      <a-entity gltf-model="assets/Streetlight.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -169.32 0"
+        scale="3 3 3">
+        <a-sphere position="-0.2 0.895 0" radius="0.01" color="#fff"
+          material="color: #fffcc; emissive: #fff; emissiveIntensity: 2"
+          light="decay: 0; distance: 10.34; intensity: 20" geometry="radius: 0.015"
+          animation="property: light.intensity; from: 1.5; to: 0; dir: alternate; dur: 300; loop: true;">
+        </a-sphere>
       </a-entity>
 
-      <a-entity gltf-model="assets/Lamp post.glb" position="-3.6 -0.02 0.41" rotation="-1.08 -47.3 0"
-        scale="0.2 0.2 0.2">
+
+      <a-entity gltf-model="assets/Streetlight.glb" position="-3.6 -0.02 0.41" rotation="-1.08 -47.3 0" scale="3 3 3">
+        <a-entity light="angle: -83.27; color: #fff; intensity: 100; type: spot" rotation="-16.920000000000005 -54.92 0"
+          position="-0.20271 0.8889 -0.00612"></a-entity>
       </a-entity>
-      <a-entity light="color: #fff; intensity: 5; type: point" position="-3.6 1.74 0.41"></a-entity>
 
-      <a-entity gltf-model="assets/Lamp post.glb" position="-2.08 -0.02 1.83" rotation="-1.08 -47.3 0"
-        scale="0.2 0.2 0.2">
+      <a-entity gltf-model="assets/Streetlight.glb" position="-2.08 -0.02 1.83" rotation="-1.08 -47.3 0" scale="3 3 3">
+        <a-entity light="angle: -83.27; color: #fff; intensity: 100; type: spot" rotation="-16.920000000000005 -54.92 0"
+          position="-0.2 0.8889 0"></a-entity>
       </a-entity>
-      <a-entity light="color: #fff; intensity: 5; type: point" position="-2.08 1.74 1.83"></a-entity>
 
 
+      <a-entity gltf-model="assets/Streetlight.glb" position="-0.48 -0.02 3.6" rotation="-1.08 -47.3 0" scale="3 3 3">
+      </a-entity>
+
+      <a-entity gltf-model="assets/Streetlight.glb" position="-2.16 -0.02 4.54" rotation="-1.08 -47.3 0" scale="3 3 3">
+      </a-entity>
+
+      <a-entity gltf-model="assets/Streetlight.glb" position="-4.78 -0.02 3.62" rotation="-1.08 -47.3 0" scale="3 3 3">
+      </a-entity>
+
+
+      <!-- Arcade ================================== -->
       <a-entity gltf-model="assets/Arcade Machine.glb" position="0.04 0.82 -0.55" rotation="-1.08 -47.3 0"
         scale="0.9 0.9 0.9">
       </a-entity>
       <a-entity light="color: #fff; intensity: 5; type: point" position="0.04 1.74 -0.55"></a-entity>
+
+
 
 
       <a-entity id="rig" rotation="0.34377467707849396 -192.74592 -4">
