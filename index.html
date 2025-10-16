@@ -52,36 +52,27 @@
       <a-sky color="#ECECEC"></a-sky>
 
       <a-entity gltf-model="assets/Streetlight.glb" position="-1.56 -0.02 -0.55" rotation="-1.08 -169.32 0"
-        scale="3 3 3">
+        scale="6 6 6">
         <a-sphere position="-0.2 0.895 0" radius="0.01" color="#fff"
           material="color: #fffcc; emissive: #fff; emissiveIntensity: 2"
           light="decay: 0; distance: 10.34; intensity: 1.0273776930790033" geometry="radius: 0.015"
-          animation__intensity="property: light.intensity; from: 6; to: 0.2; dur: 500; dir: alternate; loop: true; easing: easeInOutSine;"
+          animation__intensity="property: light.intensity; from: 10; to: 0.2; dur: 500; dir: alternate; loop: true; easing: easeInOutSine;"
           animation__emissive="property: material.emissive; from: #fff9b0; to: #000000; dur: 500; dir: alternate; loop: true; easing: easeInOutSine;"
           animation__color="property: color; from: #fff9b0; to: #000000; dur: 500; dir: alternate; loop: true; easing: easeInOutSine;">
-          
+
         </a-sphere>
       </a-entity>
 
+      <a-entity gltf-model="assets/Streetlight.glb" position="-0.22 -0.02 0.98" rotation="-1.08 -102.92 0"
+        scale="6 6 6">
+        <a-sphere position="-0.2 0.895 0" radius="0.01" color="rgba(255,249,176,1)"
+          material="emissive: rgba(255,249,176,1); emissiveIntensity: 2"
+          light="decay: 0; distance: 10.34; intensity: 10" geometry="radius: 0.015"
+          animation__intensity="dir: alternate; dur: 600; easing: easeInOutSine; from: 10; loop: true; property: light.intensity; to: 0.2"
+          animation__emissive="dir: alternate; dur: 600; easing: easeInOutSine; from: #fff9b0; loop: true; property: material.emissive; to: #000000"
+          animation__color="dir: alternate; dur: 600; easing: easeInOutSine; from: #fff9b0; loop: true; property: color; to: #000000">
 
-      <a-entity gltf-model="assets/Streetlight.glb" position="-3.6 -0.02 0.41" rotation="-1.08 -47.3 0" scale="3 3 3">
-        <a-entity light="angle: -83.27; color: #fff; intensity: 100; type: spot" rotation="-16.920000000000005 -54.92 0"
-          position="-0.20271 0.8889 -0.00612"></a-entity>
-      </a-entity>
-
-      <a-entity gltf-model="assets/Streetlight.glb" position="-2.08 -0.02 1.83" rotation="-1.08 -90.3 0" scale="3 3 3">
-        <a-entity light="angle: -83.27; color: #fff; intensity: 100; type: spot" rotation="-16.920000000000005 -54.92 0"
-          position="-0.2 0.8889 0"></a-entity>
-      </a-entity>
-
-
-      <a-entity gltf-model="assets/Streetlight.glb" position="-0.48 -0.02 3.6" rotation="-1.08 52 0" scale="3 3 3">
-      </a-entity>
-
-      <a-entity gltf-model="assets/Streetlight.glb" position="-2.16 -0.02 4.54" rotation="-1.08 -47.3 0" scale="3 3 3">
-      </a-entity>
-
-      <a-entity gltf-model="assets/Streetlight.glb" position="-4.78 -0.02 3.62" rotation="-1.08 -47.3 0" scale="3 3 3">
+        </a-sphere>
       </a-entity>
 
 
